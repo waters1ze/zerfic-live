@@ -1,0 +1,48 @@
+{
+  "name": "zerfic-live",
+  "displayName": "Zerfic Live",
+  "version": "1.0.0",
+  "description": "Полноценный живой разговорный ИИ-собеседник с мужским голосом Зерфика, эмоциями, анимациями (сидит на стуле, машет руками), жестами и интеграцией во всю базу заметок и задач.",
+  "type": "widget",
+  "category": "ИИ & Голос",
+  "icon": "🎙️",
+  "author": {
+    "name": "Zerf Community Developer",
+    "github": "waters1ze"
+  },
+  "minPlan": "plus",
+  "price": 0,
+  "isRunnable": true,
+  "entrypoint": "src/index.ts",
+  "permissions": [
+    "microphone",
+    "audio_output",
+    "read_tasks",
+    "read_notes",
+    "read_calendar"
+  ],
+  "triggers": [
+    "/live",
+    "/zerfic",
+    "зерфик",
+    "поговори со мной",
+    "зерфик лайв",
+    "zerfic live"
+  ],
+  "aiSkills": [
+    {
+      "name": "Zerfic Live Conversation",
+      "description": "Живой двусторонний голосовой диалог с мужским голосом Зерфика, рассуждениями и эмоциями",
+      "action": "zerfic_live_chat"
+    }
+  ],
+  "config": {
+    "voices": [
+      { "id": "zerfik_original", "name": "Зерфик (Фирменный)", "gender": "male", "desc": "Задорный, молодой, живой тембр" },
+      { "id": "zerfik_intellect", "name": "Зерфик (Интеллект)", "gender": "male", "desc": "Вдумчивый, глубокий мужской голос" },
+      { "id": "zerfik_coach", "name": "Зерфик (Драйв / Коуч)", "gender": "male", "desc": "Бодрый, мотивирующий тембр" }
+    ],
+    "defaultMode": "push_to_talk",
+    "enableHesitations": true
+  }
+}

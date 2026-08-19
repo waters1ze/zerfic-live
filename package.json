@@ -1,0 +1,28 @@
+{
+  "name": "@zerf/extension-zerfic-live",
+  "version": "1.0.0",
+  "description": "Zerfic Live — Conversational Full-Duplex AI Companion for Zerf Note",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint src/"
+  },
+  "keywords": [
+    "zerf",
+    "zerf-extension",
+    "voice-ai",
+    "conversational-ai",
+    "tts",
+    "stt",
+    "zerfik"
+  ],
+  "author": "Zerf Community Developer",
+  "license": "MIT",
+  "dependencies": {
+    "lucide-react": "^1.16.0"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}
